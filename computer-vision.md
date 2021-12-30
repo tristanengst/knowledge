@@ -8,5 +8,6 @@
   $$
   - This matrix is invertible (I checked), which means that the entire RGB color space maps to $255^3$ XYZ values. I believe, but haven't confirmed that there are more XYZ values.
 - **LAB**: Another color space---derived from the XYZ color space---is LAB color space. The L corresponds to the amount of lightness in the pixel (on a scale of black to white), the A represents a value on a green to red axis, and the B represents a value on a blue to yellow axis. The utility of this representation is that the human eye is differently sensitive to red, green, and blue colors. Converting to this color requires us to choose a reference white (an (XYZ) tuple), and can then be done mathematically.
+
 Sources:
  - [Understand and Visualize Color Spaces to Improve Your Machine Learning and Deep Learning Models](https://towardsdatascience.com/understand-and-visualize-color-spaces-to-improve-your-machine-learning-and-deep-learning-models-4ece80108526)
