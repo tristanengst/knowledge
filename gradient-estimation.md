@@ -6,11 +6,4 @@ $$
 using the log-derivative trick.
 
 ### Log Derivative Trick
-Note that
-$$
-  \nabla_\theta \log f(\theta) = \frac{1}{f(\theta)} \nabla_\theta f(\theta)
-$$
-and we can rearrange this to
-$$
-  f(\theta) \nabla_\theta \log f(\theta) = \nabla_\theta f(\theta)
-$$
+Note that we can rearrange $\nabla_\theta \log f(\theta) = \frac{1}{f(\theta)} \nabla_\theta f(\theta)$ to $f(\theta) \nabla_\theta \log f(\theta) = \nabla_\theta f(\theta)$.
