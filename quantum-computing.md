@@ -37,5 +37,5 @@ Now we can actually discuss _bra-kets_!
   - A _ket_ is a vector $|v \rangle$ defined as $a|0\rangle + b|1\rangle = \begin{pmatrix}a \\ b\end{pmatrix}$ where $|0\rangle$ and $|1\rangle$ are analogous to $\vec{e}_1$ and $\vec{e}_2$.
   - A _bra_ is the conjugate transpose $|v\rangle^\dagger$ of a _ket_ vector $|v\rangle$, so $\langle v| = |v\rangle^\dagger = a\langle 0| + b \langle 1| = (a^*,b^*)$
 
-The **inner product** of a _bra_ vector and a _ket_ vector is written as $\langle v| w \rangle = (a^*, b^*)begin{pmatrix}c \\ d\end{pmatrix} = a^* c + b^* d$ 
+The **inner product** of a _bra_ vector and a _ket_ vector is written as $\langle v| w \rangle = (a^*, b^*)\begin{pmatrix}c \\ d\end{pmatrix} = a^* c + b^* d$ 
  
