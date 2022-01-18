@@ -35,5 +35,5 @@ When we have a "vector space $V$ over a field", we mean the following: consider 
 
 Now we can actually discuss _bra-kets_!
   - A _ket_ is a vector $|v \rangle$ defined as $a|0\rangle + b|1\rangle = \begin{pmatrix}a \\ b\end{pmatrix}$ where $|0\rangle$ and $|1\rangle$ are analogous to $\vec{e}_1$ and $\vec{e}_2$.
-  - A _bra_ is the conjugate transpose $|v\rangle^\dagger$ of a _bra_ vector $|v\rangle>$, so $\langle v| = |v\rangle^\dagger = a\langle 0| + b \langle 1| = (a^*,b^*)$
+  - A _bra_ is the conjugate transpose $|v\rangle^\dagger$ of a _bra_ vector $|v\rangle$, so $\langle v| = |v\rangle^\dagger = a\langle 0| + b \langle 1| = (a^*,b^*)$
  
