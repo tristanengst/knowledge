@@ -21,13 +21,20 @@ Note that (1) means that all rings are groups.
 
 **Fields** are a set on which addition, subtraction, multiplication, and division are defined and behave as the corresponding operations on rational and real numbers do. More formally, a field is a set $F$ together with _addition_ and _multiplication_, to binary operations of the form $F\times F \rightarrow F$. These functions must satisfy
   1. $F$ is an Abelian group under $(+)$ (ie. it is a group)
-  2. $F - \{0\}$ (ie. $F$ without the additive identity) is an Abelian group under $\cdot$. Note that this means that for $a,b,c \in F$, $a\cdot b = c$ implies some $b^{-1} \in F$ such that $c\cdot b^{-1}=a$---a multiplicative inverse---_and_ that multiplication is associative and has an identity. This, with (1) means that all fields are rings!
+  2. $F - \{0\}$ (ie. $F$ without the additive identity) is an Abelian group under $\cdot$. Note that this means that for $a,b,c \in F$, $a\cdot b = c$ implies some $b^{-1} \in F$ such that $c\cdot b^{-1}=a—a multiplicative inverse—_and_ that multiplication is associative and has an identity. This, with (1) means that all fields are rings!
 _Note: a "vector field" violates a ton of these properties and isn't a proper field! If _
 
-We can have a "vector space $V$ over a field" in the following way: 
-### Dual Space
+When we have a "vector space $V$ over a field", we mean the following: consider the quadruple $(V, K, +, \cdot)$ where $V$ is a set of vectors, $K$ is a field, and $+: V\times V \rightarrow V$ and $\cdot : K \times V \rightarrow V$ satisfy properties to make the quadruple a _vector space_. 
 
+### Linear Maps:
+For vector spaces $V$ and $W$over the same field $K$, a function $f : V \rightarrow W$ is a linear map if for all $u,v \in V$ and $c \in K$ if $f(u+v)=f(u) + f(v)$ and $cf(u) = f(cu)$.
+
+### Dual Space
+Given any vector space $V$ over field $F$, the algebraic dual space $V'$ is defined as the set of all linear maps (aka linear functionals) $\varphi : V \rightarrow F$.
+
+### Conjugate Transpose
+Suppose we have an $m\times n$ matrix $A$ with complex entries. The conjugate transpose $A^\dagger$ of $A$ is found by first transposing $A$, and then taking every complex element $a+ib$ and replacing it with its conjugate $a-ib$. 
 
 ### Dirac Bra-Ket Notation
  - A _bra_
- - A _ket_ is a vector $|v>$
+ - A _ket_ is a vector $|v \rangle$ defined as $a|0\rangle + b|1\rangle$ where $|0\rangle and $|1\rangle$ are analogous to $\vec{e}_1$ and $\vec{e}_2$.
