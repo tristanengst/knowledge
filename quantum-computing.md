@@ -26,15 +26,14 @@ _Note: a "vector field" violates a ton of these properties and isn't a proper fi
 
 When we have a "vector space $V$ over a field", we mean the following: consider the quadruple $(V, K, +, \cdot)$ where $V$ is a set of vectors, $K$ is a field, and $+: V\times V \rightarrow V$ and $\cdot : K \times V \rightarrow V$ satisfy properties to make the quadruple a _vector space_. 
 
-### Linear Maps:
-For vector spaces $V$ and $W$over the same field $K$, a function $f : V \rightarrow W$ is a linear map if for all $u,v \in V$ and $c \in K$ if $f(u+v)=f(u) + f(v)$ and $cf(u) = f(cu)$.
-
-### Dual Space
-Given any vector space $V$ over field $F$, the algebraic dual space $V'$ is defined as the set of all linear maps (aka linear functionals) $\varphi : V \rightarrow F$.
-
-### Conjugate Transpose
-Suppose we have an $m\times n$ matrix $A$ with complex entries. The conjugate transpose $A^\dagger$ of $A$ is found by first transposing $A$, and then taking every complex element $a+ib$ and replacing it with its conjugate $a-ib$. 
-
 ### Dirac Bra-Ket Notation
- - A _bra_
- - A _ket_ is a vector $|v \rangle$ defined as $a|0\rangle + b|1\rangle$ where $|0\rangle and $|1\rangle$ are analogous to $\vec{e}_1$ and $\vec{e}_2$.
+**Linear Maps**: For vector spaces $V$ and $W$over the same field $K$, a function $f : V \rightarrow W$ is a linear map if for all $u,v \in V$ and $c \in K$ if $f(u+v)=f(u) + f(v)$ and $cf(u) = f(cu)$.
+
+**Dual Space**: Given any vector space $V$ over field $F$, the algebraic dual space $V'$ is defined as the set of all linear maps (aka linear functionals) $\varphi : V \rightarrow F$.
+
+**Conjugate Transpose**: Suppose we have an $m\times n$ matrix $A$ with complex entries. The conjugate transpose $A^\dagger$ of $A$ is found by first transposing $A$, and then taking every complex element $a+ib$ and replacing it with its conjugate $a-ib$.
+
+Now we can actually discuss _bra-kets_!
+`- A _ket_ is a vector $|v \rangle$ defined as $a|0\rangle + b|1\rangle = \begin{pmatrix}a \\ b\end{pmatrix}$ where $|0\rangle and $|1\rangle$ are analogous to $\vec{e}_1$ and $\vec{e}_2$.
+ - A _bra_ is the conjugate transpose $|v\rangle^\dagger$ of a _bra_ vector $|v\rangle>$, so $\langle v| = |v\rangle^\dagger = a\langle 0| + b \langle 1| = (a^*,b^*)$
+ 
