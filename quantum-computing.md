@@ -21,7 +21,7 @@ Note that (1) means that all rings are groups.
 
 **Fields** are a set on which addition, subtraction, multiplication, and division are defined and behave as the corresponding operations on rational and real numbers do. More formally, a field is a set $F$ together with _addition_ and _multiplication_, to binary operations of the form $F\times F \rightarrow F$. These functions must satisfy
   1. $F$ is an Abelian group under $(+)$ (ie. it is a group)
-  2. $F - \{0\}$ (ie. $F$ without the additive identity) is an Abelian group under $\cdot$. Note that this means that for $a,b,c \in F$, $a\cdot b = c$ implies some $b^{-1} \in F$ such that $c\cdot b^{-1}=a—a multiplicative inverse—_and_ that multiplication is associative and has an identity. This, with (1) means that all fields are rings!
+  2. $F - \{0\}$ (ie. $F$ without the additive identity) is an Abelian group under $\cdot$. Note that this means that for $a,b,c \in F$, $a\cdot b = c$ implies some $b^{-1} \in F$ such that $c\cdot b^{-1}=a$—a multiplicative inverse—_and_ that multiplication is associative and has an identity. This, with (1) means that all fields are rings!
 _Note: a "vector field" violates a ton of these properties and isn't a proper field!_
 
 When we have a "vector space $V$ over a field", we mean the following: consider the quadruple $(V, K, +, \cdot)$ where $V$ is a set of vectors, $K$ is a field, and $+: V\times V \rightarrow V$ and $\cdot : K \times V \rightarrow V$ satisfy properties to make the quadruple a _vector space_. 
