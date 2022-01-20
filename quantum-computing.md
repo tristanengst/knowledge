@@ -39,8 +39,20 @@ Now we can actually discuss _bra-kets_!
 
 The **inner product** of a _bra_ vector and a _ket_ vector is written as $\langle v| w \rangle = (a^*, b^*)\begin{pmatrix}c \\ d\end{pmatrix} = a^* c + b^* d$ 
  
- **Compound systems and tensor products**: Suppose we have two systems  $V$ and $W$ of dimensions $k_1$ and $k_2$. Their joint system is described by $V\otimes W$ which has dimension $k_1k_2$.
-  - 
+ **Tensor products and compound systems**:
+ - Given vectors $\vec{v}$ and $\vec{w}$, the tensor product $\vec{v}\otimes\vec{w}=\vec{v}\vec{w}^\top$ is (an abstraction of) their outer product. It is an element of the space of all tensors that can be built from vectors in the vectors' respective vector spaces.
+ - Suppose we have two systems  $V$ and $W$ of dimensions $k_1$ and $k_2$. Their joint system is described by $V\otimes W$ which has dimension $k_1k_2$.
+  - If $V$ and $W$ have bases $|e_i \rangle$ and $|f_j\rangle$, a formal basis for $V\otimes W$ is $|e_i\rangle \otimes |f_j\rangle$. Suppose $|v\rangle$ and   $|w\rangle$ are states in $V$ and $W$, such that
+    $$
+      |v\rangle = \sum_{i=1}^{k_1} v_i |e_i\rangle
+    $$
+    and similarly for $|w\rangle$. Then
+    $$
+      |v\rangle \otimes |w\rangle = \sum_{i=1}^{k_1}\sum_{j=1}^{k_2} v_iw_j |e_i \rangle \otimes |f_j\rangle
+    $$
+    - $(|v\rangle, |w\rangle) \rightarrow |v\rangle \otimes |w\rangle$ is a bilinear embedding of the form $V\times W \rightarrow V \otimes W$
+    - The state space of an $n$-qubit system is $\otimes_n \mathbb{C}^2$ which is asymptotically equal to $\mathbb{C}^{2^n}, and has basis $|b_1 \rangle \otimes \dots \otimes |b_n\rangle$ which is asymptotically equal to $|\vec{b}\rangle$ with $\vec{b}\in \{0,1\}^n$
+
 # Quantum Systems
 - **Qubits**
   - A qubit is represented by a unit vector $|\psi \rangle = a|0\rangle + b|1\rangle \in \mathbb{C}^2$
