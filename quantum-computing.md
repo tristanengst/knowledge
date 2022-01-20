@@ -51,7 +51,7 @@ The **inner product** of a _bra_ vector and a _ket_ vector is written as $\langl
       |v\rangle \otimes |w\rangle = \sum_{i=1}^{k_1}\sum_{j=1}^{k_2} v_iw_j |e_i \rangle \otimes |f_j\rangle
     $$
     - $(|v\rangle, |w\rangle) \rightarrow |v\rangle \otimes |w\rangle$ is a bilinear embedding of the form $V\times W \rightarrow V \otimes W$
-    - The state space of an $n$-qubit system is $\otimes_n \mathbb{C}^2$ which is asymptotically equal to $\mathbb{C}^{2^n}, and has basis $|b_1 \rangle \otimes \dots \otimes |b_n\rangle$ which is asymptotically equal to $|\vec{b}\rangle$ with $\vec{b}\in \{0,1\}^n$
+    - The state space of an $n$-qubit system is $\otimes_n \mathbb{C}^2$ which is asymptotically equal to $\mathbb{C}^{2^n}$, and has basis $|b_1 \rangle \otimes \dots \otimes |b_n\rangle$ which is asymptotically equal to $|\vec{b}\rangle$ with $\vec{b}\in \{0,1\}^n$
 
 # Quantum Systems
 - **Qubits**
