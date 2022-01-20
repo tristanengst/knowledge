@@ -34,8 +34,18 @@ When we have a "vector space $V$ over a field", we mean the following: consider 
 **Conjugate Transpose**: Suppose we have an $m\times n$ matrix $A$ with complex entries. The conjugate transpose $A^\dagger$ of $A$ is found by first transposing $A$, and then taking every complex element $a+ib$ and replacing it with its conjugate $a-ib$.
 
 Now we can actually discuss _bra-kets_!
-  - A _ket_ is a vector $|v \rangle$ defined as $a|0\rangle + b|1\rangle = \begin{pmatrix}a \\ b\end{pmatrix}$ where $|0\rangle$ and $|1\rangle$ are analogous to $\vec{e}_1$ and $\vec{e}_2$.
+  - A _ket_ is a vector $|v \rangle$ defined as $a|0\rangle + b|1\rangle = \begin{pmatrix}a \\ b\end{pmatrix}$ where $|0\rangle$ and $|1\rangle$ are analogous to $\vec{e}_1$ and $\vec{e}_2$. Here, $v$ is is just a symbol, and we can write others, eg. axes to represent photon polarizations.
   - A _bra_ is the conjugate transpose $|v\rangle^\dagger$ of a _ket_ vector $|v\rangle$, so $\langle v| = |v\rangle^\dagger = a\langle 0| + b \langle 1| = (a^*,b^*)$
 
 The **inner product** of a _bra_ vector and a _ket_ vector is written as $\langle v| w \rangle = (a^*, b^*)\begin{pmatrix}c \\ d\end{pmatrix} = a^* c + b^* d$ 
  
+ **Compound systems and tensor products**: Suppose we have two systems  $V$ and $W$ of dimensions $k_1$ and $k_2$. Their joint system is described by $V\otimes W$ which has dimension $k_1k_2$.
+  - 
+# Quantum Systems
+- **Qubits**
+  - A qubit is represented by a unit vector $|\psi \rangle = a|0\rangle + b|1\rangle \in \mathbb{C}^2$
+  - It can exist in a superposition of $0$ and $1$
+- **Quantum measurements and Transformations**
+  - States of a system describe its properties, and multuiple qubits can exist in entanglement
+  - Measurements of quantum systems are _inherently probabilistic_, _cause state to collapse_ (destroy information), _exhibit incompatibility_, are modelled by _projection operators_
+  -   
