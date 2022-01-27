@@ -7,4 +7,8 @@ $$
   \begin{bmatrix} |00 \rangle // |11\rangle \end{bmatrix}^T |\phi \rangle = a | 00\rangle + d | 11 \rangle
 $$
 since all the subspaces are orthogonal. The squared norm of this vector is then $|a|^2 + |d|^2$.
-To compute the post-measurement state, 
+
+To compute the post-measurement state, we recall that by measuring the two qubits, they've collapsed to the measurement---so in this sense we know what it is---but it needs to be renormalized to unit length:
+$$
+  |\phi \rangle' = \frac{a|00 \rangle + d |11 \rangle}{\sqrt{|a|^2 + |d|^2}}
+$$
