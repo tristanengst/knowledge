@@ -15,3 +15,11 @@ To compute the post-measurement state, we recall that by measuring the two qubit
 $$
   |\phi \rangle' = \frac{a|00 \rangle + d |11 \rangle}{\sqrt{|a|^2 + |d|^2}}
 $$
+
+#### Measuring a Composite System
+Suppose $|\psi \rangle \in V \otimes W$, and let $\mathcal{B} = \{|v_1 \rangle \dots |v_n\rangle \}$ be an orthonormal basis for $V$. Thus $|\psi\ rangle = \sum_{i=1}^n |v_i \ rangle | \xi_i \rangle$, where $| \xi_i \rangle \in W$ and are not necessarily normalized or orthogonal. How can we measure $|\psi \rangle with respect to the basis $\mathcal{B}$ of $V$?
+
+The probability of the system being in state $i$ corresponding to some $|e_i \rangle \in V$ is then
+$$
+  P(i) = \langle \xi_i | \xi_ i \rangle = || \rangle e_i | \psi \rangle ||_2^2
+$$
