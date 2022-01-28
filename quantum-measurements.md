@@ -21,5 +21,5 @@ Suppose $|\psi \rangle \in V \otimes W$, and let $\mathcal{B} = \{|v_1 \rangle \
 
 The probability of the system being in state $i$ corresponding to some $|e_i \rangle \in V$ is then
 $$
-  P(i) = \langle \xi_i | \xi_ i \rangle = || \rangle e_i | \psi \rangle ||_2^2
+  P(i) = \langle \xi_i | \xi_ i \rangle = || \langle e_i | \psi \rangle ||_2^2
 $$
