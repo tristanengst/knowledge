@@ -23,3 +23,4 @@ The probability of the system being in state $i$ corresponding to some $|e_i \ra
 $$
   P(i) = \langle \xi_i | \xi_ i \rangle = || \langle e_i | \psi \rangle ||_2^2
 $$
+and the post measurement state is $|\psi' \rangle = \frac{|e_i \rangle |\xi_i \rangle}{\sqrt{P(i)}$. Essentially, this is the original quantum system with the component from $V$ replaced with the measured state and the component from $W$ replaced with $|\xi_i \rangle$. 
